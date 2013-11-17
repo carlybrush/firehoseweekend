@@ -7,12 +7,18 @@
 
 
 </br>
-</br>
+
 <label>	
 <%= simple_form_for @pic do |f|%>
 			<%= f.input :lesson, :label => 'Your latest lesson:', :placeholder => '1,2,3...'%>
+			</br>
+			<%= f.input :image, :label => 'Image Upload' %>
+				</br>
+			
 			<%= f.input :emotion, :label => 'Wow are you feeling?', :placeholder => 'SUPER!, AWESOME!, AMAZING!...'%>
+
 			<%= f.input :learned, :label => 'What did you learn?', :placeholder => 'a ton, everything!, so much!...'%>
+
 		<%= submit_tag 'Save', :class =>'btn btn-info btn-large'%>
 
 		<% end %>
